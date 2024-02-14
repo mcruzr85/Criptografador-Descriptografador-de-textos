@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <title>Criptografador/Descriptografador de textos</title>
+    </head>
+    <body>
+        <header></header>
+
+        <main class="container">
+            <section>
+                <h1></h1>
+                <textarea id="ta_texto" placeholder="Digite seu texto"></textarea>
+
+                <div>
+                    <p>Logo</p>
+                    <p id="p_alerta"></p>
+                </div>
+
+                <button id="btn_criptografar" onclick="criptografar()">Criptografar</button>
+                <button id="btn_descriptografar" onclick="descriptografar()">Descriptografar</button>
+    
+            </section>
+    
+    
+    
+            <section>
+                <div>
+                    <img src="/img/menino/High quality products 1 1.svg" alt="Image menino procurando"/>
+                    <div>
+                        <h2>Nenhuma mensagem encontrada</h2>
+                        <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>             
+                    </div>
+                </div>
+                <div>
+                    <label id="lbl_resultado"></label>
+                    <button id="btn_copiar">Copiar</button>
+                    
+                </div>
+               
+               
+            </section>
+
+            
+
+        </main>
+
+        <footer><p>Desenvolvido por Meybis Cruz Rodriguez 2024</p></footer>
+        <script src="encriptador.js"></script>
+       
+    </body>
+</html>
