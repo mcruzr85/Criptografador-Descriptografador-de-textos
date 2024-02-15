@@ -4,23 +4,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/styles.css">
+        <script src="https://kit.fontawesome.com/a4586acfd1.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <title>Criptografador/Descriptografador de textos</title>
+        
     </head>
     <body>
         <header></header>
 
         <main class="container">
-            <section>
-                <h1></h1>
-                <textarea id="ta_texto" placeholder="Digite seu texto"></textarea>
 
-                <div>
-                    <p>Logo</p>
-                    <p id="p_alerta"></p>
+            <span class="material-symbols-outlined logo">
+                mail_lock
+                </span>
+
+            <section class ="entradadatos">
+                
+                
+                <textarea id="ta_texto" class ="entradadatos__textarea" placeholder="Digite seu texto" ></textarea>
+                
+                <div id="div_alerta" class="hidden entradadatos__alerta">
+                    <p id="logoalerta" ><i class="fa-solid fa-circle-exclamation" style="color: #0a386e;"></i></p>
+                    <p id="p_alerta" class ="entradadatos_alerta_texto"> "Não escrever letras maiúsculas, com acentos nem caracteres especiais"</p>
                 </div>
 
-                <button id="btn_criptografar" onclick="criptografar()">Criptografar</button>
-                <button id="btn_descriptografar" onclick="descriptografar()">Descriptografar</button>
+
+                <div class ="entradadatos__botones">
+                  <button class ="entradadatos__botones_boton fondo__azul" id="btn_criptografar" onclick="criptografar()">Criptografar</button>
+                  <button class ="entradadatos__botones_boton fondo__gris" id="btn_descriptografar" onclick="descriptografar()">Descriptografar</button>              
+                </div>               
     
             </section>
     
@@ -36,7 +48,7 @@
                 </div>
                 <div>
                     <label id="lbl_resultado"></label>
-                    <button id="btn_copiar">Copiar</button>
+                    <button id="btn_copiar " class ="entradadatos__botones_boton fondo__gris">Copiar</button>
                     
                 </div>
                
@@ -47,7 +59,7 @@
 
         </main>
 
-        <footer><p>Desenvolvido por Meybis Cruz Rodriguez 2024</p></footer>
+        <footer class="rodape"><p>Desenvolvido por Meybis Cruz Rodriguez 2024</p></footer>
         <script src="encriptador.js"></script>
        
     </body>

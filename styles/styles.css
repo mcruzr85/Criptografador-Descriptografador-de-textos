@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+--cor-primaria: #FFFFFF;
+--cor-secundaria: #0A3871;
+--cor-terciaria: #D8DFE8;  
+--fonte-primaria: "Inter", sans-serif;
+}
+
+
 *{
     padding: 0;
     margin: 0;
@@ -6,8 +16,88 @@
 
 html{
     font-size: 62.5%;
+    font-family: "Inter", sans-serif; 
+   
+}
+body{
+    background-color:#F3F5FC;
+    
 }
 .container{
     display: flex;
     justify-content: center;    
 }
+.entradadatos{
+    margin: 168px 0 0 240px;
+    display:flex;
+    flex-direction: column; 
+
+}
+.logo{
+    margin: 40px 0 0 40px; 
+    color: var(--cor-secundaria);
+}
+
+.entradadatos__textarea{  
+        
+  background-color: #F3F5FC; 
+  border: none;     
+  width:680px;
+  height:48px;
+  font-family: "Inter", sans-serif;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  color: var(--cor-secundaria);
+}
+
+.entradadatos__alerta{
+ display: flex;
+ align-items: center;
+ gap: 8px;
+}
+.hidden {
+ display: none;
+}
+
+.entradadatos_alerta_texto{
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #495057;
+}
+
+.entradadatos__botones{
+display: flex;
+}
+
+.entradadatos__botones_boton{
+  padding: 2.4rem;
+  width: 32.8rem;
+  border-radius: 2.4rem;
+  font-size: 1.6rem;  
+  font-weight: 400; 
+  line-height: 19.36px;
+  text-align: center;
+}
+
+.fondo__azul{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+.fondo__gris{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+}
+.rodape{
+    background: var(--cor-terciaria);
+    color:var(--cor-secundaria);
+    font-family:var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 24px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
