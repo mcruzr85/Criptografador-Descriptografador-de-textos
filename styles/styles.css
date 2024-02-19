@@ -21,7 +21,7 @@ html{
 }
 body{
     background-color:#F3F5FC;
-    height: 100vh;
+    /*height: 100vh;*/
     
     
 }
@@ -51,6 +51,8 @@ body{
   font-size: 3.2rem;
   line-height: 4.8rem;
   color: var(--cor-secundaria);
+  margin-bottom: 300px;
+  resize: none; 
 }
 
 .entradadatos__alerta{
@@ -93,6 +95,22 @@ display: flex;
     background-color: var(--cor-terciaria);
     color: var(--cor-secundaria);
 }
+
+.output{
+    display:flex;
+    flex-direction:column;
+    }
+    
+    .output__container{  
+      background-color: var(--cor-primaria);
+      width: 400px;
+      height: 944px;
+      border-radius: 32px;
+      box-shadow: 0px 24px 32px -8px #00000014;
+      margin: 40px 40px 40px  auto;
+    
+    }
+
 .rodape{
     background: var(--cor-terciaria);
     color:var(--cor-secundaria);
@@ -106,7 +124,7 @@ display: flex;
     justify-content: center;
     gap: 10px;
     width: 100%;
-    position: absolute;
+   /* position: absolute;
     bottom: 0;
-    left: 0;
+    left: 0;*/
   }

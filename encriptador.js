@@ -61,3 +61,20 @@ function cript(str){
   str = str.replaceAll('u', 'ufat');
   return str; 
 }
+
+async function copiar(){  
+  const strResultado = document.querySelector('#lbl_resultado').innerHTML;
+  console.log('Writed content: ', strResultado);
+  
+  try{
+     await navigator.clipboard.writeText(strResultado);
+     console.log(' luego del try Writed content: ', strResultado);
+     
+  }catch(err){
+     console.error('Failed to write on the clipboard: ', err);
+  }
+ 
+  /*.then(
+    (clipText) => (document.querySelector(".editor").innerText += clipText),
+  );*/
+}
