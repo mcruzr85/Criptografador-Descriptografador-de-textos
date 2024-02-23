@@ -107,10 +107,45 @@ display: flex;
       height: 944px;
       border-radius: 32px;
       box-shadow: 0px 24px 32px -8px #00000014;
-      margin: 40px 40px 40px  auto;
+      margin-top: 40px;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      padding: 32px;
     
     }
 
+    .output__container__inicial{
+        margin-top: 243px;
+    }
+
+    .output__inicial__divtextos{
+        margin-top: 32px;
+      width: 336px;
+      height: 122px;
+      text-align: center;
+    }
+
+    .output__inicial__cabecalho{
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 28.8px;
+        color: #343A40;
+        margin-bottom: 16px;
+    }
+
+
+    .output__inicial__texto{
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 24px;
+        color: #495057;
+    }
+
+    .output__resultado__texto{
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 36px;   
+    }
 .rodape{
     background: var(--cor-terciaria);
     color:var(--cor-secundaria);
