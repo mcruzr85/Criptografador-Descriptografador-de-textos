@@ -10,17 +10,21 @@
         
     </head>
     <body>
-        <header></header>
-
-        <main class="container">
-
-            <span class="material-symbols-outlined logo">
+        <header>
+            <div class="header__container">
+                <span class="material-symbols-outlined logo">
                 mail_lock
                 </span>
+                <p class="header__texto">Bem-vindo ao Criptografador/Descriptografador de mensagens!</p>
+            </div>
+            
+        </header>
+
+        <main class="container">            
 
             <section class ="entradadatos">                
                 
-                <textarea id="ta_texto" class ="entradadatos__textarea" placeholder="Digite seu texto" ></textarea>
+                <textarea id="ta_texto" class ="entradadatos__textarea"   placeholder="Digite seu texto" ></textarea>
                 
                 <div id="div_alerta" class="hidden entradadatos__alerta">
                     <p id="logoalerta" ><i class="fa-solid fa-circle-exclamation" style="color: #0a386e;"></i></p>
@@ -50,10 +54,11 @@
                   </div>                 
                
                 
-                  <div id="div__output__resultado"class="hidden">                   
-                    <label id="lbl_resultado" class="output__resultado__texto"></label>
+                  <div id="div__output__resultado" class="hidden">                   
+                    <textarea id="lbl_resultado" class="output__resultado__texto" cols="20" rows="10"></textarea>
                     <button id="btn_copiar " class ="entradadatos__botones_boton fondo__gris" onclick="copiar()">Copiar</button>                    
-                  </div>   
+                  </div>
+
                 </div>                       
             <section>
 
