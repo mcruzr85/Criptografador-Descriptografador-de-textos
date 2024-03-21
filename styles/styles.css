@@ -54,7 +54,7 @@ body{
     margin-left: 80px;   */
 }
 
-@media (max-width: 768px){
+@media (max-width: 1268px){
     .container{
         flex-direction: column;
     }
