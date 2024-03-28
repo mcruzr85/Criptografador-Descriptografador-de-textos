@@ -14,6 +14,7 @@ function criptografar() {
     resultado.innerHTML = cript(texto);
     divOutInicial.classList.add("hidden");
     divOutResultado.classList.remove("hidden");
+    divOutResultado.classList.add("div__output__resultado");
   } else {
     alerta.classList.remove("hidden");
     resultado.innerHTML = "";
