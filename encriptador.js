@@ -40,6 +40,7 @@ function deleteSpaces(cadena) {
 }
 
 function validate(cadena) {
+  if (!cadena.length) return false;
   str = cadena.split(/\s+/).join("");
   for (let i = 0; i < str.length; i++) {
     if (str[i].charCodeAt() < 97 || str[i].charCodeAt() > 122) {

@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root{
+--cor-bg: #F3F5FC;
 --cor-primaria: #FFFFFF;
 --cor-secundaria: #0A3871;
---cor-terciaria: #D8DFE8;  
+--cor-terciaria: #D8DFE8; 
+  
+--cor-bg2:#FFEBED;  
+--cor-primaria2: #FFFFFF;
+--cor-secundaria2: #C72E00;
+--cor-terciaria2: #D8DFE8;   
+  
 --fonte-primaria: "Inter", sans-serif;
 }
 
 
-*{
+*{ 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -17,15 +24,15 @@
 }
 
 html{
-    font-size: 62.5%;  
-   
+    font-size: 62.5%;    
 }
 
 
 body{
-    background-color:#F3F5FC;    
+    background-color:var(--cor-bg);    
     /*height: 100vh;*/
 }
+
 .header__container{
     margin-top: 2rem; 
     margin-left: 2rem;
@@ -36,7 +43,7 @@ body{
 
 .header__texto{
   font-size: 1.6rem;  
-  font-weight: 400; 
+  font-weight: 600; 
   line-height: 1.936rem;
   color: var(--cor-secundaria);
 }
@@ -57,7 +64,7 @@ body{
 }
 
 .entradadatos__textarea{          
-  background-color: #F3F5FC; 
+  background-color: var(--cor-bg);  
   border: none;     
   width:68rem;
   height:28.8rem;/*28.8rem;*/
@@ -81,9 +88,7 @@ body{
  gap: 0.8rem;
  margin-bottom: 1.6rem;
 }
-.hidden {
- display: none;
-}
+
 
 .entradadatos_alerta_texto{
   font-weight: 400;
@@ -97,7 +102,7 @@ display: flex;
 gap: 2.4rem;
 }
 
-.entradadatos__botones_boton{
+.entradadatos__botones__boton{
   padding: 2rem;
   width: 30.8rem;
   border-radius: 2.4rem;
@@ -105,7 +110,18 @@ gap: 2.4rem;
   font-weight: 400; 
   line-height: 1.936rem;
   text-align: center;
+  
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:3px; 
+ 
 }
+ .entradadatos__botones_boton:hover{
+  cursor:pointer;
+}
+
+
 
 .fondo__azul{
     background-color: var(--cor-secundaria);
@@ -121,7 +137,8 @@ gap: 2.4rem;
     flex-direction:column;
     }
     
-    .output__container{  
+    .output__container{ 
+      border: 1px solid blue;
       background-color: var(--cor-primaria);
       width: 40rem;
       height: 48rem;
@@ -130,19 +147,23 @@ gap: 2.4rem;
       margin-top: 2rem;
       margin-right: 2rem;
       margin-bottom: 2rem;
-      padding: 1.2rem;         
+      padding: 1.4rem;    
     }
 
-    .div__output__inicial{
-        margin-top: 0.3rem;       
+    .div_output_inicial{
+       margin-top: 0.3rem;  
+       border: 1px solid red;
     }
 
-    .output__inicial__divtextos{
+    .output_inicial_divtextos{
+      border: 2px solid green;
       margin-top: 0.5rem;      
-      text-align: center;
+      text-align: center;     
     }
 
-    .output__inicial__cabecalho{
+
+
+    .output_inicial_cabecalho{
         font-size: 2.4rem;
         font-weight: 700;
         line-height: 2.88rem;
@@ -150,21 +171,26 @@ gap: 2.4rem;
         margin-bottom: 1.6rem;
     }
 
-    .output__inicial__texto{
+    .output_inicial_texto{
         font-size: 1.6rem;
         font-weight: 400;
         line-height: 2.4rem;
         color: #495057;
     }
 
-    .div__output__resultado{
+  .hidden__icon{
+   display:none;
+  }
+
+    .div_output_resultado{
         display:flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+  border: 2px solid pink;
     }
 
-    .output__resultado__texto{   
+    .output_resultado_texto{   
         background: white;     
         font-size: 2.4rem;
         font-weight: 400;
@@ -177,7 +203,7 @@ gap: 2.4rem;
         height: 34rem;/*78.1rem;*/
         margin-bottom: 3.2rem;
     }    
-    .output__resultado__texto:focus{
+    .output_resultado_texto:focus{
         outline: none;
     }
   
@@ -195,68 +221,130 @@ gap: 2.4rem;
     gap: 1rem;
     width: 100%;
   }
+
+
+
+/*TABLET*/
   
 
   @media (max-width: 728px){
-    .container{
-      flex-direction: column;
-    }
-
-    /*.header__texto{ 
-      color: #D20062;
-    }*/
-
-    .entradadatos{    
-      margin: 3rem auto;  
-   
-    }
-  .entradadatos__textarea{          
-    background-color: #F3F5FC;   
-    /*color: #D20062;*/
-    margin-bottom: 5rem;    
+  
+  body{
+    background-color:var(--cor-bg2);       
   }
+   .container{
+     flex-direction: column;
+     margin: 3rem 2%; 
+    }
+
+    .header__texto{ 
+      color: var(--cor-secundaria2);
+    }
+  
+  .logo{     
+    color: var(--cor-secundaria2);
+  }
+  
+
+   .entradadatos{    
+      margin: 3rem 2%;     
+   }
+  
+  .entradadatos__textarea{          
+    background-color:var(--cor-bg2);   
+    color: var(--cor-secundaria2);
+    margin-bottom: 5rem;    
+  } 
+
+::placeholder{
+    color: var(--cor-secundaria2);
+}
+  
+  
+.fondo__azul{
+    background-color: var(--cor-secundaria2);
+    color: var(--cor-primaria2);
+}
+.fondo__gris{
+    background-color: var(--cor-terciaria2);
+    color: var(--cor-secundaria2);
+}
 
     .output__container{
-     width: 68.8rem;
-     height: 30.3rem;
-     margin: 0 auto 2rem auto;     
+      width: 90%; /*68.8rem;*/
+      height: 30.3rem;
+      margin: 0 auto 2rem auto;    
+      display: flex;
+      justify-content:center;
     }
+  
+       
     
     .entradadatos__botones_boton{
       width:90%; 
     }
     
     
-    .div__output__inicial{
-     width:68rem;
+    .div_output_inicial{
+     width:90%/*68rem*/;
      height: 13.3rem;      
     }
        
-    .output__foto__menino{
+    .output_foto_menino{
     display:none;
     }
+  
+  .hidden__icon{
+   display:block;
+   font-size:50px;  
+   color: var(--cor-secundaria2);
+  }
+  
+   .output_inicial_divtextos{
+      border: 2px solid green;
+      margin-top: 0.5rem;      
+       
+    }
     
-     .output__inicial__divtextos{
+     .output_inicial_divtextos{
       display: flex;
       flex-direction: column;
       justify-content: center;
+      text-align: center;    
       width: 100%;
-      height: 12.2rem;
-      text-align: center;
-      margin-top: 10%; 
+      height: 22.2rem;      
+      margin-top: 15px; 
+      gap:10px;
+  
+    
+      
+  
     }   
   
-    .div__output__resultado{
-      gap: 2rem;      
+    .div_output_resultado{
+      gap: 2rem;  
+      width:100%;
     }
+ 
     
-     .output__resultado__texto{        
-          width: 62.4rem;
+     .output_resultado_texto{        
+          width: 90%/*62.4rem*/;
           height: 18rem;    
           margin: 0 auto;
       }
     
-    .btn__copiar{
-    width: 62.4rem;
+   .btn__copiar{   
+    width: 90%;
     }
   }
+
+@media (max-width: 375px){
+  .entradadatos__botones{
+    flex-direction:column;
+  }
+}
+
+/*unitarias*/
+.hidden {
+ display: none;
+}
