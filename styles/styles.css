@@ -117,7 +117,7 @@ gap: 2.4rem;
   gap:3px; 
  
 }
- .entradadatos__botones_boton:hover{
+ .entradadatos__botones__boton:hover{
   cursor:pointer;
 }
 
@@ -138,10 +138,10 @@ gap: 2.4rem;
     }
     
     .output__container{ 
-      border: 1px solid blue;
+     /* border: 1px solid blue;*/
       background-color: var(--cor-primaria);
       width: 40rem;
-      height: 48rem;
+      height: 49rem;
       border-radius: 3.2rem;
       box-shadow: 0px 24px 32px -8px #00000014;
       margin-top: 2rem;
@@ -150,20 +150,20 @@ gap: 2.4rem;
       padding: 1.4rem;    
     }
 
-    .div_output_inicial{
+    .div__output__inicial{
        margin-top: 0.3rem;  
-       border: 1px solid red;
+      /* border: 1px solid red;*/
     }
 
-    .output_inicial_divtextos{
-      border: 2px solid green;
+    .output__inicial__divtextos{
+      /*border: 2px solid green;*/
       margin-top: 0.5rem;      
       text-align: center;     
     }
 
+   
 
-
-    .output_inicial_cabecalho{
+    .output__inicial__cabecalho{
         font-size: 2.4rem;
         font-weight: 700;
         line-height: 2.88rem;
@@ -171,26 +171,24 @@ gap: 2.4rem;
         margin-bottom: 1.6rem;
     }
 
-    .output_inicial_texto{
+    .output__inicial__texto{
         font-size: 1.6rem;
         font-weight: 400;
         line-height: 2.4rem;
         color: #495057;
     }
 
-  .hidden__icon{
-   display:none;
-  }
+ 
 
-    .div_output_resultado{
+    .div__output__resultado{
         display:flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-  border: 2px solid pink;
+        /*border: 2px solid pink;*/
     }
 
-    .output_resultado_texto{   
+    .output__resultado__texto{   
         background: white;     
         font-size: 2.4rem;
         font-weight: 400;
@@ -203,9 +201,20 @@ gap: 2.4rem;
         height: 34rem;/*78.1rem;*/
         margin-bottom: 3.2rem;
     }    
-    .output_resultado_texto:focus{
+    .output__resultado__texto:focus{
         outline: none;
     }
+
+    .material-symbols-outlined{
+      font-size:120px;
+    }
+
+    .hidden__div{
+      display: none;
+    }
+    .hidden__icon{     
+     font-size:10px;      
+     }
   
 .rodape{
     background: var(--cor-terciaria);
@@ -234,8 +243,11 @@ gap: 2.4rem;
   }
    .container{
      flex-direction: column;
-     margin: 3rem 2%; 
+     margin: 1rem 2%; 
+     gap: 5rem;
     }
+
+
 
     .header__texto{ 
       color: var(--cor-secundaria2);
@@ -280,33 +292,41 @@ gap: 2.4rem;
   
        
     
-    .entradadatos__botones_boton{
+    .entradadatos__botones__boton{
       width:90%; 
     }
     
     
-    .div_output_inicial{
+    .div__output__inicial{
      width:90%/*68rem*/;
      height: 13.3rem;      
     }
        
-    .output_foto_menino{
+    .output__foto__menino{
     display:none;
     }
-  
+
+    .hidden__div{
+      display: inline-block;
+      
+         
+      span{
+        font-size:50px;
+        color: var(--cor-secundaria2);
+      } 
+    }
+
   .hidden__icon{
    display:block;
-   font-size:50px;  
+   font-size: 20px; 
    color: var(--cor-secundaria2);
   }
   
-   .output_inicial_divtextos{
-      border: 2px solid green;
-      margin-top: 0.5rem;      
-       
+   .output__inicial__divtextos{   
+      margin-top: 0.5rem;        
     }
     
-     .output_inicial_divtextos{
+     .output__inicial__divtextos{
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -314,20 +334,17 @@ gap: 2.4rem;
       width: 100%;
       height: 22.2rem;      
       margin-top: 15px; 
-      gap:10px;
-  
-    
-      
+      gap:10px;     
   
     }   
   
-    .div_output_resultado{
+    .div__output__resultado{
       gap: 2rem;  
       width:100%;
     }
  
     
-     .output_resultado_texto{        
+     .output__resultado__texto{        
           width: 90%/*62.4rem*/;
           height: 18rem;    
           margin: 0 auto;
@@ -339,8 +356,17 @@ gap: 2.4rem;
   }
 
 @media (max-width: 375px){
+
+  .header__container{
+    flex-direction: column;
+}
+
+  .entradadatos__textarea{
+    font-size: 2.4rem;
+  }
   .entradadatos__botones{
     flex-direction:column;
+    align-items: center;
   }
 }
 
